@@ -1,13 +1,23 @@
 # HIP-FireFight
 Arduino sketch for the HIP Fire Fight robot course.
 
+## Parts List
+* (1) 128x64 OLED I2C display
+* (1) Momentary Push Button
+* (4) A3144 Hall Effect Sensor
+* (4) DotStar 5050 LEDs (RGB or White) ([adafruit](https://www.adafruit.com/product/2343))
+* (4) 5050 LED Breakout PCB ([adafruit](https://www.adafruit.com/product/1762))
+* (10'+) CAT5e. 2 possible configurations:
+   * 1 cable: Vcc, Gnd, SDA In, SCK In, Fire1, Fire2, Fire3, Fire4
+   * 2 cable: Vcc, Gnd, SDA In, SCK In, SDA Out, SCK Out, Fire1, Fire2 (Chain 2 cables by tying S* Out to S* In) 
+
 ## Wire List
 * A4 -> OLED SDA
 * A5 -> OLED SCL
-* 6 -> Fire 1
-* 7 -> Fire 2
-* 8 -> Fire 3
-* 9 -> Fire 4
+* 6 -> Fire 1 (Hall Effect Out 1)
+* 7 -> Fire 2 (Hall Effect Out 2)
+* 8 -> Fire 3 (Hall Effect Out 3)
+* 9 -> Fire 4 (Hall Effect Out 4)
 * 11 -> Fire Chain SData In
 * 13 -> Fire Chain SCLK In
 * 5V -> (OLED Vcc, Fire Chain Vcc)
